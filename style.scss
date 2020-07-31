@@ -1,6 +1,8 @@
 textPath {
     fill: black;
-    font-size: 20px;
+    // font-size: 20px;
+    // font-stretch: 200%;
+
 }
 text {
     width: 400px;
@@ -15,6 +17,13 @@ text {
 }
 
 .newpath {
-    fill: none; 
+    // fill: none; 
     stroke: black;
+    transform-origin: initial;
+    transform: rotate(90deg);
+}
+
+.newpath:hover {
+    fill: limegreen; 
+    transform: scale(1.1) rotate(90deg); 
 }

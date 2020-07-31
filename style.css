@@ -1,6 +1,5 @@
 textPath {
   fill: black;
-  font-size: 20px;
 }
 
 text {
@@ -13,7 +12,16 @@ text {
 }
 
 .newpath {
-  fill: none;
   stroke: black;
+  -webkit-transform-origin: initial;
+          transform-origin: initial;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.newpath:hover {
+  fill: limegreen;
+  -webkit-transform: scale(1.1) rotate(90deg);
+          transform: scale(1.1) rotate(90deg);
 }
 /*# sourceMappingURL=style.css.map */

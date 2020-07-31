@@ -22,16 +22,18 @@ for (let i = 0; i < 10; i++){
     let color = `rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255})`
     let increment = i*10; 
     let size = 100 - increment
-    newpath.setAttribute("d",`M ${150+increment}, 150 a ${size}, ${size} 0 1,1 ${size*2},0 a ${size}, ${size} 0 1,1 ${size*-2},0`)
+    newpath.setAttribute("d",`M ${150+increment}, ${150 + increment} a ${size}, ${size} 0 1,1 ${size*2},0 a ${size}, ${size} 0 1,1 ${size*-2},0`)
     newpath.setAttribute('fill', color)
     newpath.setAttribute('side', "right")
     newpath.classList.add('newpath')
     newpath.setAttribute('id', `newpath${i}`)
+    newpath.setAttribute('rotate', '3')
     // newpath.id = `newpath${i}`
 
     let text = document.createElementNS('http://www.w3.org/2000/svg',"text")
-    text.setAttribute('y', `${150}`)
-    text.setAttribute('x', `${150}`)
+    // text.setAttribute('y', `${150}`)
+    // text.setAttribute('rotate', `${increment}%`)
+    // text.setAttribute('dx', `${increment}%`)
     let newtext = document.createElementNS('http://www.w3.org/2000/svg',`textPath`)
     newtext.textContent = `newpath${i}`
     newtext.setAttribute("href", `#newpath${i}`)
