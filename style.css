@@ -1,3 +1,17 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+circle {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(90deg) scale(2);
+          transform: rotate(90deg) scale(2);
+}
+
 textPath {
   fill: black;
 }
@@ -13,15 +27,13 @@ text {
 
 .newpath {
   stroke: black;
-  -webkit-transform-origin: initial;
-          transform-origin: initial;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .newpath:hover {
   fill: limegreen;
-  -webkit-transform: scale(1.1) rotate(90deg);
-          transform: scale(1.1) rotate(90deg);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */
